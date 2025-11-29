@@ -1,6 +1,5 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
 import { Star, Share2, Heart, Scale, ChevronDown } from 'lucide-react';
@@ -18,8 +17,6 @@ export default function ProductDetailPage() {
 
     return (
         <main className="min-h-screen bg-white">
-            <Navbar />
-
             {/* Breadcrumb */}
             <div className="bg-black text-white py-8">
                 <div className="max-w-7xl mx-auto px-6">
@@ -100,8 +97,8 @@ export default function ProductDetailPage() {
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
                                 className={`pb-4 text-sm font-bold uppercase border-b-2 ${activeTab === tab
-                                        ? 'border-[#d97706] text-[#d97706]'
-                                        : 'border-transparent text-gray-500 hover:text-gray-900'
+                                    ? 'border-[#d97706] text-[#d97706]'
+                                    : 'border-transparent text-gray-500 hover:text-gray-900'
                                     }`}
                             >
                                 {tab}

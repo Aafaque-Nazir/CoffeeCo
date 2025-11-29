@@ -26,9 +26,9 @@ export default function Essentials() {
           Explore Our Coffee Essentials
         </h2>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-x-8 gap-y-12">
+        <div className="flex overflow-x-auto snap-x snap-mandatory lg:grid lg:grid-cols-7 gap-x-8 gap-y-12 pb-8 lg:pb-0 scrollbar-hide">
           {essentials.map((item, idx) => (
-            <Link key={idx} href="/products" className="group flex flex-col items-center text-center">
+            <Link key={idx} href="/products" className="group flex flex-col items-center text-center min-w-[140px] snap-center">
               <div className="relative w-full aspect-[3/4] mb-4 overflow-hidden rounded-lg bg-gray-50">
                  <div 
                     className="absolute inset-0 bg-contain bg-no-repeat bg-center transition-transform duration-500 group-hover:scale-110"

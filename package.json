@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "baseline-browser-mapping": "^2.8.32",
     "lucide-react": "^0.555.0",
     "next": "16.0.5",
     "react": "19.2.0",

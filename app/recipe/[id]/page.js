@@ -1,6 +1,5 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Clock, Users, TrendingUp } from 'lucide-react';
 import { Star } from 'lucide-react';
@@ -18,8 +17,6 @@ export default function RecipeDetailPage() {
 
     return (
         <main className="min-h-screen bg-white">
-            <Navbar />
-
             {/* Header */}
             <div className="bg-black text-white py-12">
                 <div className="max-w-7xl mx-auto px-6">

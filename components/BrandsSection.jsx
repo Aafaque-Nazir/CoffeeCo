@@ -53,7 +53,7 @@ export default function BrandsSection() {
                   {brand.name[0]}
                 </div>
                 <h3 className={`font-bold text-lg mb-2 ${brand.textColor}`}>{brand.name}</h3>
-                <p className="text-xs text-gray-500 uppercase tracking-wide">{brand.desc}</p>
+                <p className="text-xs text-gray-900 uppercase tracking-wide font-medium">{brand.desc}</p>
               </div>
             </Link>
           ))}

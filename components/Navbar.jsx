@@ -59,12 +59,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md py-4' : 'bg-black py-6'
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md py-3 md:py-4' : 'bg-black py-4 md:py-6'
       } text-white`}>
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold tracking-tighter hover:text-[#d97706] transition-colors">
+          <Link href="/" className="text-xl md:text-2xl font-bold tracking-tighter hover:text-[#d97706] transition-colors truncate mr-2">
             THE COFFEE CO
           </Link>
 
@@ -114,7 +114,7 @@ export default function Navbar() {
           </div>
 
           {/* Icons */}
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4 md:space-x-6 flex-shrink-0">
             <button className="hover:text-[#d97706] transition-colors">
               <Search className="w-5 h-5" />
             </button>

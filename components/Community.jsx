@@ -9,7 +9,7 @@ export default function Community() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-2xl font-bold uppercase mb-2 text-gray-900">Brew-tiful Moments from Our Community</h2>
-        <p className="text-gray-600 text-sm mb-12">Follow us on Instagram @TheCoffeeCo</p>
+        <p className="text-gray-900 text-sm mb-12 font-medium">Follow us on Instagram @TheCoffeeCo</p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {images.map((src, idx) => (

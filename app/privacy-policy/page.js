@@ -1,11 +1,10 @@
-import Navbar from '@/components/Navbar';
+'use client';
+
 import Footer from '@/components/Footer';
 
 export default function PrivacyPolicyPage() {
     return (
         <main className="min-h-screen bg-white">
-            <Navbar />
-
             {/* Header */}
             <div className="bg-black text-white py-12">
                 <div className="max-w-7xl mx-auto px-6">

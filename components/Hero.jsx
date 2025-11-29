@@ -15,7 +15,7 @@ export default function Hero() {
           <h2 className="text-[#d97706] font-medium tracking-widest mb-4 uppercase text-xs">
             Coffee Machines & Brewing Gear
           </h2>
-          <h1 className="text-6xl md:text-7xl font-bold leading-none mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-none mb-6 tracking-tight">
             THE COFFEE CO
           </h1>
           <p className="text-gray-300 text-base mb-8 max-w-lg leading-relaxed">

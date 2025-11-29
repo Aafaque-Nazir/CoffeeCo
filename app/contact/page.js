@@ -1,6 +1,5 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { useState } from 'react';
@@ -21,13 +20,11 @@ export default function ContactPage() {
 
     return (
         <main className="min-h-screen bg-white">
-            <Navbar />
-
             {/* Header */}
             <div className="bg-black text-white py-16">
                 <div className="max-w-7xl mx-auto px-6">
                     <p className="text-[#d97706] text-xs uppercase tracking-widest mb-2">Home / Contact</p>
-                    <h1 className="text-5xl font-bold uppercase tracking-wide">The Coffee Co</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-wide">The Coffee Co</h1>
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
-import Navbar from '@/components/Navbar';
+'use client';
+
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
@@ -25,8 +26,6 @@ export default function BlogsPage() {
 
     return (
         <main className="min-h-screen bg-white">
-            <Navbar />
-
             {/* Header */}
             <div className="bg-black text-white py-12">
                 <div className="max-w-7xl mx-auto px-6">

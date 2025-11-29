@@ -1,6 +1,5 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { useCart } from '@/context/CartContext';
 import { Trash2, Plus, Minus, ArrowRight } from 'lucide-react';
@@ -11,13 +10,12 @@ export default function CartPage() {
 
     return (
         <main className="min-h-screen bg-white text-gray-900">
-            <Navbar />
 
             {/* Hero Header */}
             <div className="bg-black text-white py-16">
                 <div className="max-w-7xl mx-auto px-6 text-center">
                     <p className="text-[#d97706] text-xs uppercase tracking-widest mb-2">Home / Cart</p>
-                    <h1 className="text-5xl font-bold uppercase tracking-wide">Shopping Cart</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-wide">Shopping Cart</h1>
                 </div>
             </div>
 

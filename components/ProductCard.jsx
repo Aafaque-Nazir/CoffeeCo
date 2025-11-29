@@ -17,9 +17,9 @@ export default function ProductCard({ product }) {
         />
       </div>
       <div className="space-y-2">
-        <p className="text-xs text-gray-500 uppercase">{product.brand}</p>
+        <p className="text-xs text-gray-900 uppercase font-medium">{product.brand}</p>
         <h3 className="font-bold text-gray-900 leading-tight h-10 overflow-hidden">{product.name}</h3>
-        <p className="text-xs text-gray-400">{product.type}</p>
+        <p className="text-xs text-gray-900">{product.type}</p>
         <div className="flex justify-between items-center">
              <span className="text-lg font-bold text-[#d97706]">{product.price}</span>
         </div>

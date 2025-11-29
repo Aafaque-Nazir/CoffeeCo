@@ -1,19 +1,18 @@
-import Navbar from '@/components/Navbar';
+'use client';
+
 import Footer from '@/components/Footer';
 import LogoRow from '@/components/LogoRow';
 
 export default function AboutPage() {
     return (
         <main className="min-h-screen bg-white">
-            <Navbar />
-
             {/* Hero Header */}
             <div className="bg-black text-white h-[400px] flex flex-col items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 text-[200px] font-bold whitespace-nowrap select-none flex items-center justify-center pointer-events-none">
-                    THE COFFEE CO
+                    ABOUT
                 </div>
                 <div className="relative z-10 text-center">
-                    <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-6">The Coffee Co</h1>
+                    <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-6">About Us</h1>
                     <div className="flex items-center justify-center space-x-3 text-sm font-medium tracking-widest uppercase text-[#d97706]">
                         <span>Home</span>
                         <span className="w-1 h-1 bg-[#d97706] rounded-full"></span>
@@ -54,7 +53,7 @@ export default function AboutPage() {
 
                         {/* Content */}
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-8">Who We Are?</h2>
+                            <h2 className="text-3xl md:text-5xl font-bold uppercase mb-8">Who We Are?</h2>
                             <div className="space-y-6 text-gray-600 leading-relaxed">
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -75,7 +74,7 @@ export default function AboutPage() {
             <section className="bg-black text-white py-24 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-6 relative z-10">
                     <div className="text-center mb-20">
-                        <h2 className="text-4xl md:text-5xl font-bold uppercase mb-8">What We Do?</h2>
+                        <h2 className="text-3xl md:text-5xl font-bold uppercase mb-8">What We Do?</h2>
                         <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
@@ -106,7 +105,7 @@ export default function AboutPage() {
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-8">Our Story</h2>
+                            <h2 className="text-3xl md:text-5xl font-bold uppercase mb-8">Our Story</h2>
                             <div className="space-y-6 text-gray-600 leading-relaxed">
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -148,7 +147,7 @@ export default function AboutPage() {
             <section className="py-24">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4">Gallery</h2>
+                        <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4">Gallery</h2>
                         <p className="text-gray-500">A glimpse into our world of coffee</p>
                     </div>
 

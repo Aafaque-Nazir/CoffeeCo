@@ -1,15 +1,14 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 
 export default function BrandPage({ params }) {
     const [selectedMachine, setSelectedMachine] = useState('all');
     const [selectedColors, setSelectedColors] = useState([]);
-    // Unwrap params for Next.js 15+ compatibility or standard usage
-    const brandId = params?.brand;
+    // Unwrap params for Next.js 15+ compatibility
+    const { brand: brandId } = use(params);
 
     const brands = [
         { id: 'gaggia', name: 'Gaggia', color: 'bg-red-600' },
@@ -67,13 +66,11 @@ export default function BrandPage({ params }) {
 
     return (
         <main className="min-h-screen bg-white text-gray-900">
-            <Navbar />
-
             {/* Header */}
             <div className="bg-black text-white py-16">
                 <div className="max-w-7xl mx-auto px-6">
                     <p className="text-[#d97706] text-xs uppercase tracking-widest mb-2">Home / {currentBrand.name}</p>
-                    <h1 className="text-5xl font-bold uppercase tracking-wide">The Coffee Co</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-wide">The Coffee Co</h1>
                 </div>
             </div>
 

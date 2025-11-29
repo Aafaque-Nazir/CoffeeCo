@@ -1,9 +1,8 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { useState } from 'react';
 import { Clock, Users, ChefHat, ArrowRight } from 'lucide-react';
+import { useState } from 'react';
 
 export default function RecipePage() {
     const [activeCategory, setActiveCategory] = useState('All');
@@ -11,8 +10,8 @@ export default function RecipePage() {
     const categories = ['All', 'Hot Coffee', 'Cold Coffee', 'Desserts', 'Cocktails'];
 
     const featuredRecipe = {
-        title: 'The Perfect Espresso Martini',
-        description: 'A sophisticated blend of espresso, vodka, and coffee liqueur. The perfect evening pick-me-up that balances rich coffee flavors with a smooth finish.',
+        title: 'Espresso Martini',
+        description: 'A sophisticated cocktail that combines the rich, bold flavors of espresso with the smooth kick of vodka.',
         time: '15 mins',
         servings: '2 servings',
         difficulty: 'Medium',
@@ -77,8 +76,6 @@ export default function RecipePage() {
 
     return (
         <main className="min-h-screen bg-white text-gray-900">
-            <Navbar />
-
             {/* Hero Header */}
             <div className="bg-black text-white h-[400px] flex flex-col items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 text-[200px] font-bold whitespace-nowrap select-none flex items-center justify-center pointer-events-none">
@@ -152,8 +149,8 @@ export default function RecipePage() {
                                 key={cat}
                                 onClick={() => setActiveCategory(cat)}
                                 className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-all ${activeCategory === cat
-                                        ? 'bg-black text-white shadow-lg scale-105'
-                                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                                    ? 'bg-black text-white shadow-lg scale-105'
+                                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                                     }`}
                             >
                                 {cat}
